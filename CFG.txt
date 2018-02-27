@@ -1,0 +1,93 @@
+List of Non-Terminals:
+S	=>	sentence
+NP	=>	noun phrase
+VP	=>	verb phrase
+N	=>	noun
+PN	=>	proper noun
+PR	=>	pronoun
+V	=>	verb
+DT	=>	determiner
+A	=>	adjective
+
+
+Grammar :
+
+S => NP(1Sg) VP(1Sg)
+S => NP(2Sg) VP(2Sg)
+S => NP(3Sg) VP(3Sg)
+S => NP(1Pl) VP(1Pl)
+S => NP(2Pl) VP(2Pl)
+S => NP(3Pl) VP(3Pl)
+S => PN VP(Sg)
+S => PN VP(Pl)
+
+
+{Noun Phrases}
+NP(1Sg) => PR(1Sg)| 
+		   DT(Sg-Fem) N(Sg-Fem) | DT(Sg-Fem) N(Sg-Fem) A(Sg-Fem) | DT(Sg-Fem) A(Sg-Fem) N(Sg-Fem) | DT(Pl) N(Pl-Fem) | DT(Pl) N(Pl-Fem) A(Pl-Fem) | DT(Pl) A(Pl-Fem) N(Pl-Fem) |
+		   DT(Sg-Mas) N(Sg-Mas) | DT(Sg-Mas) N(Sg-Mas) A(Sg-Mas) | DT(Sg-Mas) A(Sg-Mas) N(Sg-Mas) | DT(Pl) N(Pl-Mas) | DT(Pl) N(Pl-Mas) A(Pl-Mas) | DT(Pl) A(Pl-Mas) N(Pl-Mas) |
+NP(2Sg) => PR(2Sg) |
+		   DT(Sg-Fem) N(Sg-Fem) | DT(Sg-Fem) N(Sg-Fem) A(Sg-Fem) | DT(Sg-Fem) A(Sg-Fem) N(Sg-Fem) | DT(Pl) N(Pl-Fem) | DT(Pl) N(Pl-Fem) A(Pl-Fem) | DT(Pl) A(Pl-Fem) N(Pl-Fem) |
+		   DT(Sg-Mas) N(Sg-Mas) | DT(Sg-Mas) N(Sg-Mas) A(Sg-Mas) | DT(Sg-Mas) A(Sg-Mas) N(Sg-Mas) | DT(Pl) N(Pl-Mas) | DT(Pl) N(Pl-Mas) A(Pl-Mas) | DT(Pl) A(Pl-Mas) N(Pl-Mas) |
+NP(3Sg) => PR(3Sg) |
+		   DT(Sg-Fem) N(Sg-Fem) | DT(Sg-Fem) N(Sg-Fem) A(Sg-Fem) | DT(Sg-Fem) A(Sg-Fem) N(Sg-Fem) | DT(Pl) N(Pl-Fem) | DT(Pl) N(Pl-Fem) A(Pl-Fem) | DT(Pl) A(Pl-Fem) N(Pl-Fem) |
+		   DT(Sg-Mas) N(Sg-Mas) | DT(Sg-Mas) N(Sg-Mas) A(Sg-Mas) | DT(Sg-Mas) A(Sg-Mas) N(Sg-Mas) | DT(Pl) N(Pl-Mas) | DT(Pl) N(Pl-Mas) A(Pl-Mas) | DT(Pl) A(Pl-Mas) N(Pl-Mas) |
+NP(1Pl) => PR(1Pl) |
+		   DT(Sg-Fem) N(Sg-Fem) | DT(Sg-Fem) N(Sg-Fem) A(Sg-Fem) | DT(Sg-Fem) A(Sg-Fem) N(Sg-Fem) | DT(Pl) N(Pl-Fem) | DT(Pl) N(Pl-Fem) A(Pl-Fem) | DT(Pl) A(Pl-Fem) N(Pl-Fem) |
+		   DT(Sg-Mas) N(Sg-Mas) | DT(Sg-Mas) N(Sg-Mas) A(Sg-Mas) | DT(Sg-Mas) A(Sg-Mas) N(Sg-Mas) | DT(Pl) N(Pl-Mas) | DT(Pl) N(Pl-Mas) A(Pl-Mas) | DT(Pl) A(Pl-Mas) N(Pl-Mas) |
+NP(2Pl) => PR(2Pl) |
+		   DT(Sg-Fem) N(Sg-Fem) | DT(Sg-Fem) N(Sg-Fem) A(Sg-Fem) | DT(Sg-Fem) A(Sg-Fem) N(Sg-Fem) | DT(Pl) N(Pl-Fem) | DT(Pl) N(Pl-Fem) A(Pl-Fem) | DT(Pl) A(Pl-Fem) N(Pl-Fem) |
+		   DT(Sg-Mas) N(Sg-Mas) | DT(Sg-Mas) N(Sg-Mas) A(Sg-Mas) | DT(Sg-Mas) A(Sg-Mas) N(Sg-Mas) | DT(Pl) N(Pl-Mas) | DT(Pl) N(Pl-Mas) A(Pl-Mas) | DT(Pl) A(Pl-Mas) N(Pl-Mas) |
+NP(3Pl) => PR(3Pl) |
+		   DT(Sg-Fem) N(Sg-Fem) | DT(Sg-Fem) N(Sg-Fem) A(Sg-Fem) | DT(Sg-Fem) A(Sg-Fem) N(Sg-Fem) | DT(Pl) N(Pl-Fem) | DT(Pl) N(Pl-Fem) A(Pl-Fem) | DT(Pl) A(Pl-Fem) N(Pl-Fem) |
+		   DT(Sg-Mas) N(Sg-Mas) | DT(Sg-Mas) N(Sg-Mas) A(Sg-Mas) | DT(Sg-Mas) A(Sg-Mas) N(Sg-Mas) | DT(Pl) N(Pl-Mas) | DT(Pl) N(Pl-Mas) A(Pl-Mas) | DT(Pl) A(Pl-Mas) N(Pl-Mas) |
+
+{Verb Phrases}
+VP(Sg) => V(1Sg) | V(2Sg) | V(3Sg)
+VP(Pl) => V(1Pl) | V(2Pl) | V(3Pl)
+VP(1Sg) =>  V(1Sg) | V(1Sg) NP(1Sg) 
+VP(2Sg) =>  V(2Sg) | V(2Sg) NP(2Sg) 
+VP(3Sg) =>  V(3Sg) | V(3Sg) NP(3Sg) 
+VP(1Pl) =>  V(1Sg) | V(1Sg) NP(1Sg) 
+VP(2Pl) =>  V(2Sg) | V(2Sg) NP(2Sg) 
+VP(3Pl) =>  V(3Sg) | V(3Sg) NP(3Sg) 
+
+{Adjectives}
+A(Sg-Mas) => heureux | beau | joli | bon | nouveau | fatigue | noir | dernier
+A(Sg-Fem) => heureuse | belle | jolie | bonne | nouvelle | fatiguee | noire | derniere 
+A(Pl-Mas) => heureux | beaux | jolis | bons | nouveaux | fatigues | noirs | derniers
+A(Pl-Fem) => heureuses | belles | jolies | bonnes | nouvelles | fatiguees | noires | dernieres
+
+{Determiners}
+
+DT(Masc) -> le | un
+DT(Fem) -> la | une
+DT(Pl) -> les
+
+{Pronouns}
+PR(1Sg) => je
+PR(2Sg) => tu | vous
+PR(3Sg) => il | elle
+PR(1Pl) => nous
+PR(2Pl) => vous
+PR(3Pl) => ils | elles
+
+
+{Verbs}
+
+V(1Sg) -> mange | bois | aime | cherche | lis | regarde
+V(2Sg) -> manges | bois | aimes | cherches | lis | regardes
+V(3Sg) -> mange | boit | aime | cherche | lit | regarde
+V(1Pl) -> buvons | aimons | cherchons | lisons | regardons | mangeons
+V(2Pl) -> buvez | aimez | cherchez | lisez | regardez | mangez
+V(3Pl) -> boivent | aiment | cherchent | lisent | regardent | mangent
+
+
+
+{Nouns}
+
+N(Sg-Masc) -> manteau | chat | poisson | livre
+N(Sg-Fem) -> television | pomme | eau
+N(Pl-Masc) -> manteaux | chats | poissons | livres
+N(Pl-Fem) -> televisions | pommes | eaux
+PN -> Jackie | Montreal
